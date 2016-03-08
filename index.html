@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profit</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.flatly.min.css">
+
+
+</head>
+<body>
+
+<div ng-app="myApp">
+    <div ng-controller="AppCtrl">
+        <ul ng-repeat="(key, value) in names| groupBy: 'Symbol'">
+            Groupname: {{ key }}
+
+
+
+            <li ng-repeat="name in value">
+                TxnId: {{ name.TxnId }}
+            </li>
+
+        </ul>
+        <table>
+            <tr>
+                <th>TxnId</th>
+                <th>Symbol</th>
+                <th>Action</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>MarketValue</th>
+            </tr>
+            <tr ng-repeat=" name in names">
+
+                <td>{{name.TxnId}}</td>
+                <td>{{name.Symbol}}</td>
+                <td>{{name.Action}}</td>
+                <td>{{name.Quantity}}</td>
+                <td>{{name.Price}}</td>
+                <td>{{name.MarketValue}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div ui-view style="padding:3%; background:#FAFAFA; height:100%">
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-mocks.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-cookies.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-filter/0.4.7/angular-filter.js"></script>
+<script type="text/javascript" src="app.js"></script>
+
+</body>
+</html>
