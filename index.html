@@ -17,10 +17,9 @@
         <ul ng-repeat="(key, value) in names| groupBy: 'Symbol'">
             Groupname: {{ key }}
 
-
-
             <li ng-repeat="name in value">
-                TxnId: {{ name.TxnId }}
+                TxnId: {{ Action.TxnId }}
+
             </li>
 
         </ul>

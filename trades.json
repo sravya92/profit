@@ -7,7 +7,7 @@
 {"TxnId":4 , "Symbol":"IBM" , "Action":"Sell" , "Quantity":150, "Price":52 , "MarketValue":-7800} ,
 {"TxnId":2 , "Symbol":"XOM" , "Action":"Buy" , "Quantity":80, "Price":41 , "MarketValue":3280} ,
 {"TxnId":6 , "Symbol":"XOM" , "Action":"Sell" , "Quantity":70, "Price":43 , "MarketValue":-3010} ,
-{"TxnId":7 , "Symbol":"BAC" , "Action":"Buy" , "Quantity":1000, "Price":15 , "MarketValue":15000} ,
+{"TxnId":7 , "Symbol":"BAC" , "Action":"Buy" , "Quantity":122, "Price":15 , "MarketValue":15000} ,
 {"TxnId":8 , "Symbol":"XOM" , "Action":"Buy" , "Quantity":20, "Price":43 , "MarketValue":860} ,
 {"TxnId":9 , "Symbol":"IBM" , "Action":"Buy" , "Quantity":100, "Price":53 , "MarketValue":5300} ,
 {"TxnId":10 , "Symbol":"IBM" , "Action":"Sell" , "Quantity":50, "Price":54 , "MarketValue":-2700} ,
